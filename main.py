@@ -17,7 +17,7 @@ def path_traversal_resolver(ctf_session_code: str):
 @app.command()
 def infinite_money_ctf_resolver(ctf_session_code: str, session_cookie:str):
     """
-    An automized script to solve the challange 'Infinite money logic flow'.
+    An automized script to solve the PortSwigger challange 'Infinite money logic flow'.
     """
     infiniteMoneyCTF.main(ctf_session_code=ctf_session_code, session_cookie=session_cookie)
 
