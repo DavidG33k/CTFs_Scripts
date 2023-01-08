@@ -20,7 +20,7 @@ def main(ctf_session_code: str, session_cookie: str):
         response = requests.get(CTF_URL+'cart',cookies=cookie)
         node= html.fromstring(response.text)
         cashXhtml = node.xpath('//header[@class="navigation-header"]/p/strong')
-        cash = cashXhtml[0].text.split()[2].split('$')[1].split('.')[0] #Store credit: $93.00
+        cash = cashXhtml[0].text.split()[2].split('$')[1].split('.')[0]
         print("Cash available $" + cash)
 
         #Insert giftCards in cart
